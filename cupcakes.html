@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Choose Your Cupcake</title>
+</head>
+<body>
+
+<div class="cupcake-container">
+    <h2>Choose Your Cupcake</h2>
+    
+    <div class="cupcake-option" >
+        <img src="image/Cupcake choco.png" alt="Chocolate Cupcake">
+        <p class="cupcake-name">Chocolate Cupcake</p>
+        <p class="cupcake-price">$2.50</p>
+        <label for="quantityChocolate">Quantity:</label>
+        <input min="0" type="number" id="quantityChocolate" class="quantity"/>
+    </div>
+    
+    <div class="cupcake-option">
+        <img src="./image/Cupcake Vanilla.png" alt="Vanilla Cupcake">
+        <p class="cupcake-name">Vanilla Cupcake</p>
+        <p class="cupcake-price">$2.00</p>
+        <label for="quantityVanilla">Quantity:</label>
+        <input min="0" type="number" id="quantityVanilla" class="quantity"/>
+    </div>
+
+    <div class="cupcake-option">
+        <img src="./image/Cupcakes Strawberry.png" alt="Strawberry Cupcake">
+        <p class="cupcake-name">Strawberry Cupcake</p>
+        <p class="cupcake-price">$2.75</p>
+        <label for="quantityStrawberry">Quantity:</label>
+        <input min="0" type="number" id="quantityStrawberry" class="quantity"/>
+    </div>
+
+    <button onclick="checkout()">Checkout</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
