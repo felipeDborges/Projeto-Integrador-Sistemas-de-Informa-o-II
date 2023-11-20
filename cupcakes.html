@@ -3,12 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <title>Choose Your Cupcake</title>
 </head>
-<body>
+<body class="wallpaper">
 
-<div class="cupcake-container">
+    <div class="container cupcake-container">
+        <h2>Escolha seu Cupcake</h2>
+        <div class="row g-2">
+          <div class="col-6">
+            <div class="p-3 bg-pink cupcake-option">
+                <img src="image/Cupcake choco.png" alt="Chocolate Cupcake">
+                <p class="cupcake-name">Chocolate Cupcake</p>
+                <p class="cupcake-price">$2.50</p>
+                <label for="quantityChocolate">Quantity:</label>
+                <input min="0" type="number" id="quantityChocolate" class="quantity"/>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="p-3 bg-pink cupcake-option">
+                <img src="./image/Cupcake Vanilla.png" alt="Vanilla Cupcake">
+                <p class="cupcake-name">Vanilla Cupcake</p>
+                <p class="cupcake-price">$2.00</p>
+                <label for="quantityVanilla">Quantity:</label>
+                <input min="0" type="number" id="quantityVanilla" class="quantity"/>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="p-3 bg-pink cupcake-option">
+                <img src="./image/Cupcakes Strawberry.png" alt="Strawberry Cupcake">
+                <p class="cupcake-name">Strawberry Cupcake</p>
+                <p class="cupcake-price">$2.75</p>
+                <label for="quantityStrawberry">Quantity:</label>
+                <input min="0" type="number" id="quantityStrawberry" class="quantity"/>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="p-3 bg-pink cupcake-option">
+                <img src="./image/Cupcake Blueberry.png" alt="Blueberry Cupcake">
+                <p class="cupcake-name">Blueberry Cupcake</p>
+                <p class="cupcake-price">$4.15</p>
+                <label for="blueberryCupcake">Quantity:</label>
+                <input min="0" type="number" id="blueberryCupcake" class="quantity"/>
+            </div>
+          </div>
+          <button onclick="checkout()">Checkout</button>
+        </div>
+      </div>
+
+<!-- <div class="cupcake-container">
     <h2>Choose Your Cupcake</h2>
     
     <div class="cupcake-option" >
@@ -36,8 +80,9 @@
     </div>
 
     <button onclick="checkout()">Checkout</button>
-</div>
+</div> -->
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="script.js"></script>
 </body>
 </html>
