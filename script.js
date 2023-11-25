@@ -1,5 +1,10 @@
 let selectedCupcake = null;
 const loginForm = document.getElementById('loginForm');
+const signupButton = document.getElementById('signupButton');
+
+function goBack() {
+    window.history.back();
+  }
 
 loginForm.addEventListener('submit', function (event) {
     event.preventDefault();
@@ -27,7 +32,7 @@ function checkout() {
             let name = cupcake.querySelector('.cupcake-name').textContent;
             let price = cupcake.querySelector('.cupcake-price').textContent;
             let quantity = cupcake.querySelector('.quantity').value;
-            arrCupcake.push({name:name, price:price, quantity:Number(quantity)});
+            arrCupcake.push({name:name, price:Number(price), quantity:Number(quantity)});
         });
         sessionStorage.setItem('cupcakes', JSON.stringify(arrCupcake));
         window.location.href = 'checkout.html';
@@ -36,3 +41,4 @@ function checkout() {
     }
     console.log(arrCupcake);
 }
+

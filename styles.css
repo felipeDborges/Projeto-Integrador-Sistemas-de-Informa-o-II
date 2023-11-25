@@ -84,6 +84,28 @@ button {
     cursor: pointer;
 }
 
+.cupcakesButton{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    max-width: 55%;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
 .cupcake-option .quantity {
     margin-top: 5px;
     padding: 8px;
@@ -120,3 +142,30 @@ button {
     background-position: center center;
     
 }
+
+
+
+#cupcakesInfo {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px; /* Espaçamento entre o elemento e os demais elementos */
+  }
+  
+  .Cupcakes-selecionados {
+    color: #4CAF50;
+  }
+  
+  /* Estilos específicos para a lista gerada pelo JavaScript */
+  #cupcakesInfo ul {
+    padding-left: 0;
+  }
+  
+  #cupcakesInfo li {
+    list-style: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f56788;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }

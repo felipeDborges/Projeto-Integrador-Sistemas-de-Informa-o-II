@@ -10,7 +10,7 @@
 <body class="wallpaper">
 
     <div class="container cupcake-container">
-        <h2>Escolha seu Cupcake</h2>
+            <h2>Escolha seu Cupcake</h2>
         <div class="row g-2">
           <div class="col-6">
             <div class="p-3 bg-pink cupcake-option">
@@ -48,7 +48,10 @@
                 <input min="0" type="number" id="blueberryCupcake" class="quantity"/>
             </div>
           </div>
-          <button onclick="checkout()">Checkout</button>
+          <div class="row justify-content-center mt-3 ">
+            <button onclick="checkout()" class="btn btn-primary mb-2 cupcakesButton">Checkout</button>
+            <button id="goBackButton" class="btn btn-primary mb-2 cupcakesButton" onclick="goBack()">Voltar</button>
+          </div>
         </div>
       </div>
 
