@@ -30,15 +30,14 @@ function checkout() {
     if (isSelected) {
         cupcakes.forEach (cupcake => {
             let name = cupcake.querySelector('.cupcake-name').textContent;
-            let price = cupcake.querySelector('.cupcake-price').textContent;
+            let price = parseFloat(cupcake.querySelector('.cupcake-price').textContent.replace('$', ''));
             let quantity = cupcake.querySelector('.quantity').value;
-            arrCupcake.push({name:name, price:Number(price), quantity:Number(quantity)});
+            arrCupcake.push({name:name, price:price, quantity:Number(quantity)});
         });
         sessionStorage.setItem('cupcakes', JSON.stringify(arrCupcake));
         window.location.href = 'checkout.html';
     } else {
         alert('Please select a cupcake before proceeding to checkout.');
     }
-    console.log(arrCupcake);
 }
 
