@@ -1,14 +1,6 @@
 let selectedCupcake = null;
 const loginForm = document.getElementById('loginForm');
 
-loginForm.addEventListener('submit', function (event) {
-    event.preventDefault();
-    // Aqui você pode adicionar lógica de autenticação antes do redirecionamento, se necessário.
-
-    // Redireciona para a página cupcakes.html
-    window.location.href = '../pages/cupcakes.html';
-});
-
 function goBack() {
     window.history.back();
 }
