@@ -16,7 +16,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.bg-pink input{
+.bg-pink input {
     background-color: #f56788;
     border: 0;
 }
@@ -30,7 +30,6 @@ body {
     cursor: pointer;
     text-decoration: none
 }
-
 
 body {
     font-family: Arial, sans-serif;
@@ -56,16 +55,16 @@ body {
     margin: 20px;
     cursor: pointer;
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .cupcake-option img {
     width: 80px;
     height: 80px;
     border-radius: 8px;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
 .cupcake-option select {
@@ -84,6 +83,28 @@ button {
     cursor: pointer;
 }
 
+.cupcakesButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    max-width: 55%;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
 .cupcake-option .quantity {
     margin-top: 5px;
     padding: 8px;
@@ -101,11 +122,10 @@ button {
 .wallpaper {
     position: relative;
     background-color: rgba(220, 86, 117, 0.388)
-    
 }
 
-.wallpaper::before{
-    content:"";
+.wallpaper::before {
+    content: "";
     display: block;
     position: absolute;
     z-index: -1;
@@ -114,9 +134,62 @@ button {
     bottom: 0;
     left: 0;
     opacity: 0.5;
-    background-image: url('./image/Wallpaper.png');
+    background-image: url('../image/Wallpaper.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    
+
+}
+
+
+
+#cupcakesInfo {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.Cupcakes-selecionados {
+    color: #4CAF50;
+}
+
+#cupcakesInfo ul {
+    padding-left: 0;
+}
+
+#cupcakesInfo li {
+    list-style: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f56788;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Adiciona regras de estilo para tamanhos de tela menores que 768px */
+@media (max-width: 767.98px) {
+    .custom-col {
+        width: 100%;
+        /* Define a largura das colunas para ocupar 100% da largura da tela */
+        margin-bottom: 20px;
+        /* Adiciona espaço entre as colunas */
+    }
+}
+
+/* Adiciona regras de estilo para tamanhos de tela maiores que 768px */
+@media (min-width: 768px) {
+    .custom-col {
+        float: left;
+        /* Faz as colunas flutuarem ao lado umas das outras */
+        box-sizing: border-box;
+        /* Faz com que a largura inclua o padding e a borda */
+        padding: 10px;
+        /* Adiciona espaçamento interno para as colunas */
+    }
+
+    .col-md-6 {
+        width: 50%;
+        /* Define a largura das colunas para ocupar 50% da largura da tela */
+    }
 }
